@@ -37,7 +37,7 @@ int main() {
     bool same = true;
     if(charStack1.size() == charStack2.size()) {
         while(!charStack1.empty() && same) {
-            if(charStack1.top() =! charStack2.top()) {
+            if(charStack1.top() != charStack2.top()) {
                 same = false;
             }
             charStack1.pop();
@@ -52,6 +52,8 @@ int main() {
 
     if(same)
         std::cout << "Both files are the same.\n";
+    else
+        std::cout << "Both files are not the same.\n";
     
     return 0;
 }
